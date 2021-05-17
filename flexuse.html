@@ -1,0 +1,76 @@
+<html>
+<head>
+    <link rel="stylesheet"  href="useflex.css">
+    <script>
+       
+        function myFunction() {
+            if(document.getElementById('name').value!=="" && document.getElementById('dob').value!==""&& document.getElementById('g').value!==""&& document.getElementById('email').value!=="" && document.getElementById('phone').value!==""){
+          alert("Your Registration have been done!");
+            }
+            else if(document.getElementById('name').value ==="" &&
+            
+            document.getElementById('dob').value===""&&
+            document.getElementById('g').value===""&&
+            document.getElementById('email').value===""&&
+            document.getElementById('phone').value===""){
+
+               
+                document.getElementById('name').style.borderBottom='2px solid red';  
+                document.getElementById('dob').style.borderBottom='2px solid red';
+                document.getElementById('g').style.borderBottom='2px solid red';
+                document.getElementById('email').style.borderBottom='2px solid red';
+                document.getElementById('phone').style.borderBottom='2px solid red';  
+            }
+        }
+    
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="imageSection">
+                <img src="colorgirl.jpg">
+            </div>
+            <div class="formSection">
+                <form  method="post">
+                    <h1>Registration Info</h1>
+                    <table>
+                        <tr>
+                            <td>
+                             <input id="name" type="text" placeholder="name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>
+                            <input type="date" placeholder="DateBirth" id="dob" name="DateBirth" required>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="g">
+                                   <option value="" disabled selected hidden>Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" id="email" placeholder="Email" name="myemail" required> 
+                             </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <input type="text" id="phone" placeholder="Phonenumber" name="idnumber" pattern="[0-9]{10}" required>
+                            </td> 
+                        </tr>
+                    </table>
+                    <button class="btnSubmit" onclick="myFunction()"> Submit</button>
+                   
+
+                </form>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

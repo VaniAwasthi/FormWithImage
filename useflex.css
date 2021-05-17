@@ -1,0 +1,74 @@
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    background-color:pink;
+    width:60%;
+    margin:auto;
+}
+.imageSection{
+    background-color:white;
+    width:50%;
+    
+}
+.formSection{
+    background-color:black;
+    width:50%;
+}
+h1{
+    background-color:black;
+    color:blanchedalmond;}
+table{
+background:black;
+width:350px;
+color:white;
+margin: auto;
+}
+input,select
+{
+padding:10px;
+width:100%;
+border:none;
+outline: none;
+border-bottom :2px solid white ;
+background-color: transparent;
+color:white;
+font-family:Arial;
+font-weight: 800;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.6;
+    filter: invert(0.8);
+    font-weight: 50;
+    font-family:Arial;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+  }
+  
+h1{
+    color:white;
+    text-align: center;
+    padding: 2px;
+}
+.btnSubmit
+{
+width:20%;
+margin-left:150px;
+background:green;
+color:white;
+border:none;
+padding:10px;
+border-radius:10px;
+cursor: pointer;
+}
+.btnSubmit:hover{
+    background-color: white;
+    color:black;
+}
+
+img{
+    height:90vh;
+    width:100%;
+}
